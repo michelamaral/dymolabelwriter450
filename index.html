@@ -1,0 +1,56 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<title>Print Me That Label</title> 
+<link rel="stylesheet" type="text/css" href="PrintMeThatLabel.css" />
+<script src = "cookie.js" type="text/javascript"> </script>
+<script src = "base64.js" type="text/javascript"> </script>
+<script src = "jquery-1.4.3.min.js" type="text/javascript"> </script>
+<script src = "http://www.labelwriter.com/software/dls/sdk/js/DYMO.Label.Framework.2.0.2.js" type="text/javascript" charset="UTF-8"> </script>
+<script src = "PrintMeThatLabel.js" type="text/javascript" charset="UTF-8"> </script>
+
+</head>
+
+<body>
+<div id="wrapper">
+<div class='labelDesignArea'> 
+
+    <label for="labelTextArea">Text on the label:</label><textarea name="labelTextArea" id="labelTextArea" rows='2'></textarea>
+    <button id='printButton'>Print</button>
+    <div id='jobStatusDiv'>
+        <span id='jobStatusMessageSpan'></span>
+    </div>
+ 
+<!--<div class='labelSettings'>
+        <a href='javascript:void(0)' id='labelSettingsButton'>Label settings</a> 
+        <div id='labelSettingsDiv'> 
+            <input type='checkbox' id='fixedLengthCheckbox'>Print a fixed length label of</input>
+            <input type='text' id='fixedLabelLengthTextBox'></input> <span>inches</span>        </div>
+    </div>-->
+</div>
+
+<div id="printersDiv">
+    <label for="printersComboBox">Printer:</label>
+    <select id="printersComboBox"></select>
+</div>
+
+<div class='printerSettings'>
+    <a href='javascript:void(0)' id='printerSettingsButton'>Printer location (url)</a> 
+    <div id='printerSettingsDiv'>
+        <label for='printerUriTextBox'></label>
+      <input type='text' id='printerUriTextBox'></input>
+      <button id='addPrinterUriButton'>Add</button>
+      <button id='clearPrinterUriButton'>Clear</button>
+    </div>    
+</div>
+</div>
+
+</body> 
+ 
+</html> 
+
